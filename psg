@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# 搜索进程
+
+ps aux | grep $1 | grep -v "grep ${1}" | grep -v "psg ${1}"
