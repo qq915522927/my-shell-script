@@ -1,4 +1,5 @@
 #!/bin/bash
 
 #kill 所有包含name的进程
+#Example: ka pylint
  ps aux | grep $1 | grep -v "grep ${1}" | awk '{print $2}' | xargs kill -9
